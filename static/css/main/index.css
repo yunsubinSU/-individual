@@ -1,0 +1,71 @@
+body{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aqua;
+}
+
+header{
+    background-color: blue;
+}
+
+/* 위드가 늘어야하는 부분 */
+/* 광고 부분 */
+#hight-header{
+    padding: 35px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+/* 네비 부분입니다 */
+#row-header{
+    background-color: bisque;
+    justify-content: center;
+    
+}
+
+#row-header>ul{
+    list-style-type: none;
+
+}
+
+#row-header>.nav{
+    display: flex;
+    padding: 10px;
+    
+}
+#row-header>.nav > li{
+    margin: 10px;
+}
+
+#row-header>.nav > li >a{
+    text-decoration: none;
+    color: black;
+}
+
+#row-header>.nav > .user1 {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-left: auto;
+}
+
+#row-header>.nav> .user1>li>button>a{
+    color: black;
+    text-decoration: none;
+}
+
+#row-header>.nav> .user1>li>button{
+    border: 1px solid skyblue;
+    background-color: aliceblue;
+    padding: 10px;
+
+}
+
+#callme{
+    width: 30px;
+    height: 30px;
+}
+
