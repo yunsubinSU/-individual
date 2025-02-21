@@ -5,51 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인 페이지</title>
     <link rel="stylesheet" href="./static/css/main/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="hight-header">
-            <a>여기는 광고 부분입니다만</a>
-            <button class="del">X</button>
-        </div>
+    
+
     <header>
-        
+        <div id="hight-header">
+        <a class="banner">
+            <p id="welcom">어서오세요! 씨네콩에 오신것을 환영합니다! </p>   
+            <button type="button" class="del">x</button>
+        </a>
+       </div>
         <div id="row-header">
             <ul class="nav">
-                <li><a href="#">영화</a></li>
-                <li><a href="#">채팅방</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">사이트 사용방법</a></li>
+                <li class="me"><a href="#">영화</a></li>
+                <li class="me"><a href="#">동아리</a></li>
+                <li class="me"><a href="#">공지사항</a></li>
+                <li class="me"><a href="#">사이트 사용방법</a></li>
                 <ul class="user1">
-                    <li><button><a href="#">로그인</a></button></li>
-                    <li><button><a href="#">회원가입</a></button></li>
+                    <li><button class="log"><a href="#">로그인</a></button></li>
+                    <li><button class="join"><a href="#">회원가입</a></button></li>
                     <li><a href="#"><img id="callme" src="./static/images/here.png" alt="여보세요"></a></li>
                 </ul>
             </ul>
         </div>
-
     </header>
+    <main class="one">
+        <div class="carousel">
+            <iframe width="1500px" height="900px" src="https://www.youtube.com/embed/7OIFdWk83no?si=-vCQf5bvhJfRl6G8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <ul class="videocontent">
+                <li class="title">
+                    <h1>
+                        Today's movies
+                    </h1>
+                </li>
+                <li class="vche">AboutTime</li>
+                <li class="vc">
+                    모태솔로인 팀(도널 글리슨)은 성인이 된 날, 아버지(빌 나이)로부터 놀랄 만한 가문의 비밀을 듣게 된다.
+                    바로 시간을 되돌릴 수 있는 능력이 있다는 것! 그것이 비록 히틀러를 죽이거나 여신과 뜨거운 사랑을 할 수는 없지만,
+                    여자친구는 만들어 줄 순 있으리..
+                    어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?</li>
+                    <hr>
+                    
+                </ul>
+            </div>
+    </main>
+
+    
     <main>
         <section>
-            <div class="carousel">
-                <div class="imge-container">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250131_150%2F1738284520291u9Juj_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화7">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250122_152%2F1737520669753Byxun_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화1">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250207_135%2F17388962578517PWcE_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화2">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250115_105%2F1736930499921DOPKq_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화3">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250214_98%2F1739506338912Q9gAK_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화4">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250204_286%2F17386341750431sHRo_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화5">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250120_54%2F1737354989887Wp150_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화6">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250131_150%2F1738284520291u9Juj_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화7">
-                    <img src="https://search.pstatic.net/common?type=o&size=304x456&quality=100&direct=true&src=https%3A%2F%2Fs.pstatic.net%2Fmovie.phinf%2F20250122_152%2F1737520669753Byxun_JPEG%2Fmovie_image.jpg%3Ftype%3Dw640_2" alt="영화1">
+            <div class="content1">
+                <div class="slider-container">
+                    <div class="slide">
+                        <img src="https://blog.kakaocdn.net/dn/Gr5XV/btrQ1JGA716/4kJmmE6d6GxpjcRg7RLnu1/img.jpg" alt="영화1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/ko/b/be/%EB%AF%B8%EB%93%9C%EB%82%98%EC%9E%87_%EC%84%A0_2018.jpg" alt="영화2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://image.tmdb.org/t/p/original/63UZDFDUIXiOo2uMCC0xlwgjpPW.jpg" alt="영화3">
+                    </div>
+                    <div class="slide">
+                        <img src="https://muko.kr/files/attach/images/2024/06/18/bfe18767547611d4662847a4b80a5125.jpg" alt="영화4">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.namu.wiki/i/98iZsp0yWxQ462o6Du7JEEaWGSbUWU4SNzqJx4S47NnRz62GD0Lbv_IRiEM0LptNoj_cO2GRyxiYkcwrPu5Syw.webp" alt="영화5">
+                    </div>
+                    <div class="slide">
+                        <img src="https://joyposter.cafe24.com/NEW-posters/F600X848Poster/FMV-308.jpg" alt="영화6">
+                    </div>
+                    <div class="slide">
+                        <img src="https://ojsfile.ohmynews.com/STD_IMG_FILE/2023/1001/IE003210463_STD.jpg" alt="영화7">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="prev">
+                        <
+                    </button>
+                    <button class="next">
+                        >
+                    </button>
                 </div>
             </div>
-            <div class="container1">
-                <div class="content">
-                    <div></div>
+
+            <div class="content2">
+                <div id="hotplay">
+                    <p>활동수가 많은 동아리</p>
+                    <div id="enjoy">
+                        <ul>
+                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">만나지 않아요! 대화만 하는방!</a></li>
+                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">대구 동아리</a></li>
+                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">부산 동아리</a></li>
+                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">서울 동아리</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <div id="hotreiw">웃긴 리뷰 </div>
             </div>
         </section>
     </main>
+
+    
+
     <script src="./static/js/main/index.js"></script>
 </body>
 </html>

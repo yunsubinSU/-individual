@@ -1,71 +1,352 @@
-body{
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: aqua;
+/* 배너 스타일 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-header{
-    background-color: blue;
-}
-
-/* 위드가 늘어야하는 부분 */
-/* 광고 부분 */
-#hight-header{
-    padding: 35px;
-    background-color: rgb(255, 255, 255);
-   
-}
-
-/* 네비 부분입니다 */
-#row-header{
-    background-color: bisque;
-    justify-content: center;
-    
-}
-
-#row-header>ul{
-    list-style-type: none;
-
-}
-
-#row-header>.nav{
+/* 배너 */
+#hight-header {
+    width: 100%;
+    height: 80px; /* 배너 높이 */
+    background-color: #fff;
     display: flex;
-    padding: 10px;
-    
-}
-#row-header>.nav > li{
-    margin: 10px;
-}
-
-#row-header>.nav > li >a{
-    text-decoration: none;
-    color: black;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid;
 }
 
-#row-header>.nav > .user1 {
-    list-style-type: none;
+.banner>#welcom{
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: "Do Hyeon", serif;
+}
+.banner {
     display: flex;
     align-items: center;
-    color: black;
-    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-#row-header>.nav> .user1>li>button>a{
-    color: black;
+.bannerimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 닫기 버튼 */
+.del {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* 네비게이션 바 */
+#row-header {
+    position: relative;
+    
+    left: 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 15px 0;
+    transition: top 0.3s ease-in-out; /* 네비게이션 올라가는 애니메이션 */
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.nav .me:nth-child(2)::after,
+.nav .me:nth-child(3)::after,
+.nav .me:nth-child(4)::after
+{
+    position:absolute;
+    content:"";
+    top:0;
+    left: -10px;
+    width:1px;
+    height:30px;
+    background-color:#333;
+}
+.nav a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-size: 18px;
 }
 
-#row-header>.nav> .user1>li>button{
-    border: 1px solid skyblue;
-    background-color: aliceblue;
-    padding: 10px;
-
+/* 사용자 메뉴 */
+.user1 {
+    margin-left: 750px;
+    display: flex;
+    gap: 10px;
+    
 }
-
+.user1>li>button{
+    background-color:white;
+    border-radius: 10px;
+    height: 40px;    
+}
+.user1>li>button>a:hover{
+    color: powderblue;
+}
+.user1>li>button>a{
+    color: black;
+    
+}
 #callme{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+/* -------------------------------- */
+
+/* 전체 부분 */
+
+.one{    
+    position: relative;
+    margin: 0px auto;
+    
+    text-align: center;
+    height: 1250px;
+    min-height: 100%;
+    padding-bottom: 150px;
+    transition: margin-top 0.3s ease-in-out;
+    background-color: black;
 }
 
+
+main>section{
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    width: 1200px;
+    margin: 200px auto;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+
+.one>.carousel>.videocontent>.title>h1{
+    background-color: black;
+    margin: 0px;
+    font-size: 50px;
+    color: white;
+    
+}
+
+/* 배너부분 */
+.one>.carousel{
+    margin: 0px auto;
+    margin-top: 110px;
+    height:auto;
+    overflow: hidden;
+}
+.one>.carousel>.videocontent{
+    background-color: black;
+    width: 1500px;
+    height: 400px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+}
+.one>.carousel>.videocontent>.vche{
+    margin: 0px;
+    padding: 20px;
+    width:1200px;
+    height: 60px;
+    color:white;
+    text-align: left;
+    font-size: 40px;
+
+    list-style: none;
+    
+}
+.one>.carousel>.videocontent>.vc{
+    background-color: black;
+    height: 200px;
+    width: 1200px;
+    margin: 0px;
+    padding: 0px 5px;
+    list-style: none;
+    overflow: hidden;
+    color: white;
+    text-align: left;
+    /* margin-top: 250px; */
+    font-size: 30px;
+    
+}
+
+
+.one>.carousel>iframe{
+    margin-top: 30px;
+}
+
+/* 내용 슬라이드 부분 */
+
+main>section{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1400px;
+}
+main>section>.content1{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    justify-content: center;
+}
+main>section>.content1>.slider-container{
+    width: 1250px;
+    height: 100%;
+    perspective: 500px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    /* perspective속성은 실제 사용자가 멀리있는 사물을 바라볼떄 원금감을 표현하는 속성 */
+}
+main>section>.content1>.slider-container>.slide {
+    transition:0.5s;
+    width:300px;
+    height:500px;
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+  }
+
+  main>section>.content1>.slider-container>.slide>img{
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+  }
+
+  main>section>.content1>.slider-container>.slide:nth-of-type(1),
+  main>section>.content1>.slider-container>.slide:nth-of-type(2){  
+    transform:translate(calc(-50%*5.1),-50%) translateZ(-100px);
+  }
+  main>section>.content1>.slider-container>.slide:nth-of-type(3){
+    transform:translate(calc(-50%*3.1),-50%) translateZ(-50px);
+  }
+  main>section>.content1>.slider-container>.slide:nth-of-type(4){
+     transform:translate(calc(-50%*1.1),-50%) translateZ(50px) ;
+  }
+  main>section>.content1>.slider-container>.slide:nth-of-type(5){
+      transform:translate(calc(-50%*-0.9),-50%) translateZ(-50px) ;
+  }
+  main>section>.content1>.slider-container>.slide:nth-of-type(6),
+  main>section>.content1>.slider-container>.slide:nth-of-type(7){
+    transform:translate(calc(-50%*-2.9),-50%) translateZ(-100px) ;
+  }
+
+  main>section>.content1>.buttons{    
+    transform:translate(-50%);
+    margin: 0 auto;
+    margin-left: 700px;
+
+  }
+
+  main>section>.content1>.buttons>.prev{
+    border: none;
+    background-color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+
+main>section>.content1>.buttons>.prev:hover{
+    color: #999999;
+}
+
+
+
+main>section>.content1>.buttons>.next{
+    border: none;
+
+    margin: 0 25px;
+    background-color: #fff;
+    font-size: 35px;
+  }
+
+  main>section>.content1>.buttons>.next:hover{
+    color: #999999;
+ }
+
+
+
+/* 인기 동아리와 인기 리뷰들 */
+main>section>.content2{
+    height: 300px;
+    margin: 100px 0;
+    display:grid;
+    gap: 100px;
+}
+main>section>.content2>#hotplay{
+
+}
+main>section>.content2>div{
+    background-color: rgb(0, 0, 0);
+    height: 150px;
+    border-radius: 30px;
+    margin: 20px;
+    width: 1200px;
+    height: 350px;
+    padding: 20px;
+    align-items: center;
+    color: white;
+}
+main>section>.content2>#hotplay>p{
+    text-align: left;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+main>section>.content2>#hotplay>#enjoy{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    height: 250px;
+    align-items: center;
+    background-color: #fff;
+}
+
+main>section>.content2>#hotplay>#enjoy>ul>li{
+    font-size: 40px;
+    text-align: left;
+    list-style: num;
+    color: black;
+}
+main>section>.content2>#hotplay>#enjoy>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+/* 푸터 부분 */
+footer{
+    background-color: black;
+  color: antiquewhite;
+  height: 100px;
+  left: 0;
+  width: 100%;
+  position: relative;
+  transform: translateY(-100%);
+}

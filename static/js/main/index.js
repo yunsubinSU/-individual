@@ -1,26 +1,36 @@
-const container = document.querySelector(".image-container");
-const images = document.querySelectorAll(".image-container img");
-const imageWidth = 300; // ✅ 이미지 너비 (300px)
-let index = 1; // ✅ 두 번째 이미지부터 시작 (앞뒤 더미 이미지 추가했기 때문)
+document.addEventListener("DOMContentLoaded", function () {
+    const closeButton = document.querySelector(".del");
+    const banner = document.getElementById("hight-header");
+    const mainContent = document.querySelector("main");
+    const navBar = document.getElementById("row-header");
 
-// ✅ 초기 위치 설정
-container.style.transform = `translateX(-${index * imageWidth}px)`;
+    closeButton.addEventListener("click", function () {
+        banner.style.opacity = "0"; // 서서히 사라지는 효과
 
-function slide() {
-    index++;
-
-    // ✅ 슬라이드 이동
-    container.style.transition = "transform 0.5s ease-in-out";
-    container.style.transform = `translateX(-${index * imageWidth}px)`;
-
-    // ✅ 마지막 이미지에서 처음으로 자연스럽게 이동
-    if (index === images.length - 1) {
         setTimeout(() => {
-            container.style.transition = "none";
-            index = 1;
-            container.style.transform = `translateX(-${index * imageWidth}px)`;
-        }, 500);
-    }
-}
+            banner.style.display = "none"; // 완전히 숨김
+            navBar.style.top = "0"; // 네비게이션을 위로 이동
 
-setInterval(slide, 3000); // ✅ 3초마다 자동 슬라이드
+            // main이 자연스럽게 올라가도록 애니메이션 적용
+            // mainContent.style.transition = "margin-top 0.3s ease-in-out"; 
+            mainContent.style.marginTop = "100px"; // 네비게이션 높이만큼 줄이기
+        }, 300);
+    });
+
+
+    const container = document.querySelector('.slider-container');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    
+    prev.addEventListener('click',()=>{
+        const slides = document.querySelectorAll('.slide')
+        
+        container.append(slides[0])
+      })
+    
+    next.addEventListener('click',()=>{
+        const slides = document.querySelectorAll('.slide')
+        
+        container.prepend(slides[slides.length-1])
+      })
+});
