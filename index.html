@@ -15,7 +15,10 @@
     <header>
         <div id="hight-header">
         <a class="banner">
-            <p id="welcom">어서오세요! 씨네콩에 오신것을 환영합니다! </p>   
+            <p id="welcom">어서오세요! 씨네콩에 오신것을 환영합니다!<br>
+            저희 사이트가 처음이시라면 아래에 <span style="color: red;">사이트 사용방법</span> 부터 봐주시면 됩니다!<br>
+            아니라면 옆에 삭제 버튼을 눌러주세요~
+        </p>   
             <button type="button" class="del">x</button>
         </a>
        </div>
@@ -24,7 +27,7 @@
                 <li class="me"><a href="#">영화</a></li>
                 <li class="me"><a href="#">동아리</a></li>
                 <li class="me"><a href="#">공지사항</a></li>
-                <li class="me"><a href="#">사이트 사용방법</a></li>
+                <li class="me"><a href="./page/content/method.html">사이트 사용방법</a></li>
                 <ul class="user1">
                     <li><button class="log"><a href="#">로그인</a></button></li>
                     <li><button class="join"><a href="#">회원가입</a></button></li>
@@ -59,6 +62,15 @@
     <main>
         <section>
             <div class="content1">
+                <div class="content1-title">
+                    <ul class="movietitle">
+                        <li>Hot movies</li>
+                        <ul class="pluse">
+                            <li><a href="#">더보기></a></li>
+                        </ul>
+                    </ul>
+
+                </div>
                 <div class="slider-container">
                     <div class="slide">
                         <img src="https://blog.kakaocdn.net/dn/Gr5XV/btrQ1JGA716/4kJmmE6d6GxpjcRg7RLnu1/img.jpg" alt="영화1">
@@ -92,23 +104,46 @@
                 </div>
             </div>
 
-            <div class="content2">
-                <div id="hotplay">
-                    <p>활동수가 많은 동아리</p>
-                    <div id="enjoy">
-                        <ul>
-                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">만나지 않아요! 대화만 하는방!</a></li>
-                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">대구 동아리</a></li>
-                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">부산 동아리</a></li>
-                            <li><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">서울 동아리</a></li>
+            <div class="content2"> 
+                <hr>
+                <div id="hotreiw">
+                    <div class="content2-title">
+                        <ul class="funny">
+                            <li>실시간 웃긴 리뷰</li>
+                            <ul class="pluse1">
+                                <li><a href="#">더보기></a></li>
+                            </ul>
                         </ul>
                     </div>
+
+                    <ul class="reiw">
+                        <li>(닉네임:rexxx님) 이런 사랑 나는 언제쯤</li>
+                        <li>(닉네임:lovxxx님) 나에게도 이런 장롱 하나쯤 있었다면,,</li>
+                        <li>(닉네임:paxxx님) 남주 너무 잘생김 여주 핵이쁨</li>
+                        <li>(닉네임:hxx님) 저 불안이 머리털 다 뽑고 싶었습니다.</li>
+                        <li>(닉네임:rex님) 저 완전 T 인데 눈물 콧물 다빼고 옴 F가 되,, </li>
+                        <li>(닉네임:rexxx님) 저도 남편이랑 한번 크게 사고나서 기억이라도 잃어볼까요?</li>
+                        <li>(닉네임:rexxx님) 이렇게 티나는 CG는 첨이야,,</li>
+                    </ul>
                 </div>
-                <div id="hotreiw">웃긴 리뷰 </div>
+                <hr>
+                <p>활동수가 많은 동아리</p>
+                <div id="hotplay"> 
+                        <ul class="enjoy_banner"> 
+                            <li class="joy1"><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">Only talk</a></li>
+                            <li class="joy1"><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">대구 동아리</a></li>
+                            <li class="joy1"><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">부산 동아리</a></li>
+                            <li class="joy1"><a href="#" onclick="alert('이 방에 참여하시겠습니까?')">서울 동아리</a></li>
+                        </ul>
+                </div>
             </div>
         </section>
     </main>
 
+    <footer>
+        <p>
+            This is the end! Please go back to the top</p>
+    </footer>
     
 
     <script src="./static/js/main/index.js"></script>

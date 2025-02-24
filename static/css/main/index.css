@@ -10,7 +10,7 @@ header {
 /* 배너 */
 #hight-header {
     width: 100%;
-    height: 80px; /* 배너 높이 */
+    height: 200px; /* 배너 높이 */
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -54,7 +54,6 @@ header {
 /* 네비게이션 바 */
 #row-header {
     position: relative;
-    
     left: 0;
     margin: 0 auto;
     background-color: #ffffff;
@@ -203,12 +202,16 @@ main>section{
 }
 
 /* 내용 슬라이드 부분 */
+main{
+    height: 100%;
 
+}
 main>section{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     width: 1400px;
+    height: 2000px;
 }
 main>section>.content1{
     width: 100%;
@@ -217,7 +220,8 @@ main>section>.content1{
     justify-content: center;
 }
 main>section>.content1>.slider-container{
-    width: 1250px;
+    width: 100%;
+    align-items: center;
     height: 100%;
     perspective: 500px;
     margin: 0 auto;
@@ -261,7 +265,7 @@ main>section>.content1>.slider-container>.slide {
 
   main>section>.content1>.buttons{    
     transform:translate(-50%);
-    margin: 0 auto;
+    margin: 20 auto;
     margin-left: 700px;
 
   }
@@ -281,7 +285,6 @@ main>section>.content1>.buttons>.prev:hover{
 
 main>section>.content1>.buttons>.next{
     border: none;
-
     margin: 0 25px;
     background-color: #fff;
     font-size: 35px;
@@ -290,63 +293,131 @@ main>section>.content1>.buttons>.next{
   main>section>.content1>.buttons>.next:hover{
     color: #999999;
  }
+/* 여기는 더보기란 추가 */
+ main>section>.content1>.content1-title{
+    position: relative;
+    
+ }
 
-
-
+  main>section>.content1>.content1-title>.movietitle{
+    display: flex;
+    
+  }
+ main>section>.content1>.content1-title>.movietitle{
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-between;
+ }
+ main>section>.content1>.content1-title>.movietitle>.pluse>li{
+    list-style: none;
+ }
+ main>section>.content1>.content1-title>.movietitle>.pluse>li>a{
+    text-decoration: none;
+    font-size:20px;
+    color: #333;
+ }
 /* 인기 동아리와 인기 리뷰들 */
 main>section>.content2{
-    height: 300px;
-    margin: 100px 0;
-    display:grid;
-    gap: 100px;
-}
-main>section>.content2>#hotplay{
-
-}
-main>section>.content2>div{
-    background-color: rgb(0, 0, 0);
-    height: 150px;
-    border-radius: 30px;
-    margin: 20px;
-    width: 1200px;
-    height: 350px;
-    padding: 20px;
-    align-items: center;
-    color: white;
-}
-main>section>.content2>#hotplay>p{
-    text-align: left;
-    font-size: 40px;
     padding: 0;
-    margin: 0;
-}
-main>section>.content2>#hotplay>#enjoy{
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 10px;
-    height: 250px;
-    align-items: center;
-    background-color: #fff;
-}
+    margin: 0 auto;
+    margin-top: 200px;
 
-main>section>.content2>#hotplay>#enjoy>ul>li{
-    font-size: 40px;
-    text-align: left;
-    list-style: num;
-    color: black;
 }
-main>section>.content2>#hotplay>#enjoy>ul>li>a{
+main>section>.content2>hr{
+    border-width:5px 0 0 0; 
+    border-style:dashed; 
+    border-color: #ddd5d5;
+}
+main>section>.content2>p{
+    text-align: center;
+    font-size: 40px;
+}
+main>section>.content2>#hotplay>.enjoy_banner{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    justify-content: center;
+}
+main>section>.content2>#hotplay>.enjoy_banner>li{
+    list-style: none;
+    width: 250px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    /* margin-right: 35px; */
+    text-align: center;
+    align-items: center;
+}
+main>section>.content2>#hotplay>.enjoy_banner>li>a{
     text-decoration: none;
     color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+main>section>.content2>#hotplay {
+    display: flex; 
+    overflow: hidden;
+}
+main>section>.content2>#hotplay>.enjoy_banner{
+    display: flex;
+    width: 100%;
+    animation: roll 10s linear infinite;
+}
+
+main>section>.content2>#hotplay>.enjoy_banner>.joy1:last-child {
+    animation-delay: 10s;
+  }
+
+  main>section>.content2>#hotreiw>.content2-title{
+    position: relative;
+    margin: 30px;
+ }
+
+ main>section>.content2>#hotreiw>.content2-title>.funny{
+    display: flex;
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-between;
+ }
+ main>section>.content2>#hotreiw>.content2-title>.funny>.pluse1>li{
+    list-style: none;
+ }
+ main>section>.content2>#hotreiw>.content2-title>.funny>.pluse1>li>a{
+    text-decoration: none;
+    font-size:20px;
+    color: #333;
+ }
+/* 웃긴 리뷰  */
+
+main>section>.content2>#hotreiw{
+    margin: 50px;
+}
+main>section>.content2>#hotreiw>ul>li{
+    list-style: none;
+    font-size: 30px;
+    
+    padding: 10px;
+    text-align: left;
+}
+main>section>.content2>#hotreiw>p{
     font-size: 40px;
 }
+
 /* 푸터 부분 */
-footer{
-    background-color: black;
-  color: antiquewhite;
-  height: 100px;
-  left: 0;
-  width: 100%;
-  position: relative;
-  transform: translateY(-100%);
-}
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100;
+  }
+  
