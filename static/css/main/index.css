@@ -123,13 +123,12 @@ header {
 /* 전체 부분 */
 
 .one{    
-    position: relative;
     margin: 0px auto;
-    
+    display: flex;
     text-align: center;
     height: 1250px;
     min-height: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
     transition: margin-top 0.3s ease-in-out;
     background-color: black;
 }
@@ -197,9 +196,6 @@ main>section{
 }
 
 
-.one>.carousel>iframe{
-    margin-top: 30px;
-}
 
 /* 내용 슬라이드 부분 */
 main{
@@ -417,7 +413,25 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 80px 0;
     z-index: 100;
   }
-  
+
+/* ------------------------------ */
+
+.bg-video {
+    margin: 0 auto;
+    opacity: .7; 
+    /* 해상도 */
+}
+
+.bg-video>video {
+    width: 1200px;
+    height: 700px;
+}
+
+.gradient-overlay {
+    margin: 0 auto;
+    padding: 0;
+    pointer-events: none;
+}
