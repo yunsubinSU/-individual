@@ -12,9 +12,9 @@
 * 1명
 
 ### 개발환경
-*Front:React.js(React Hook)
-*Back: String boot
-*DB : Mysql
+* Front:React.js(React Hook)
+* Back: String boot
+* DB : Mysql
 
 ### 🎬 기본 구조 LINK
 * 피그마 : <링크 사입 할 거임>
